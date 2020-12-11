@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto Mono', monospace;
+  background-image: url(https://hdqwalls.com/wallpapers/theres-no-place-like-localhost-51.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typewriter h1{
+  font-size: 6vw;
+  color: #3f3;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-cursor .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-cursor {
+  0% { border-color: transparent }
+  50% { border-color: orange; }
+  100% { border-color: transparent }
+}
+
+.box{
+  width: 50vw;
+  padding: 20px 10px;
+  margin: 3vh auto;
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+h2{
+  text-align: center;
+  color: #3f3;
+  margin-bottom: 20px;
+}
+
+#user-psw{
+  text-align: center;
+  padding: 5px;
+  color: #3f3;
+  background-color: black;
+}
